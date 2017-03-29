@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_max_list_preference">
+        <item>5 km</item>
+        <item>10 km</item>
+        <item>20 km</item>
+        <item>50 km</item>
+        <item>100 km</item>
+    </string-array>
+
+    <string-array name="entryvalues_max_list_preference">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="entries_detailed_list_preference">
+        <item>5 m</item>
+        <item>1 km</item>
+        <item>10 km</item>
+    </string-array>
+
+    <string-array name="entryvalues_detailed_list_preference">
+        <item>5</item>
+        <item>1000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string-array name="empty_array"></string-array>
+
+</resources>
+

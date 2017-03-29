@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="Display"
+            android:key="pref_key_display_settings">
+        <CheckBoxPreference
+                android:key="pref_key_hide_radar"
+                android:summary="Hide the radar displayed on the screen"
+                android:title="Hide Radar"
+                android:defaultValue="false"/>
+        <CheckBoxPreference
+                android:key="pref_key_hide_zoom_bar"
+                android:summary="Hide the zoom bar displayed on the screen"
+                android:title="Hide Zoom Bar"
+                android:defaultValue="false"/>
+
+        <CheckBoxPreference
+                android:key="pref_key_disable_image_icons"
+                android:summary="Don't use images to indicate POI's"
+                android:title="Disable Image Icons"
+                android:defaultValue="false"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Distance"
+            android:key="pref_key_distance_settings">
+
+        <ListPreference
+                android:key="detailed_radius_preference"
+                android:title="Select Detailed Radius"
+                android:summary="Choose the radius within all POI's will be shown"
+                android:entries="@array/entries_detailed_list_preference"
+                android:entryValues="@array/entryvalues_detailed_list_preference"
+                android:dialogTitle="Select Detailed Radius"
+                android:defaultValue="1000"/>
+
+        <ListPreference
+                android:key="max_radius_preference"
+                android:title="Select Maximum Radius"
+                android:summary="Choose the maximum radius within which data will be shown"
+                android:entries="@array/entries_max_list_preference"
+                android:entryValues="@array/entryvalues_max_list_preference"
+                android:dialogTitle="Select Maximum Radius"
+                android:defaultValue="100000"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Account">
+        <CheckBoxPreference
+                android:key="pref_key_remember"
+                android:summary="Automatically get logged in when opening the application"
+                android:title="Remember Details"
+                android:defaultValue="false"/>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

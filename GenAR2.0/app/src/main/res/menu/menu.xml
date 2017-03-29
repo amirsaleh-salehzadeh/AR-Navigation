@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <item android:id="@+id/viewAllRoles"
+            android:title="Roles">
+      </item>
+      <item android:id="@+id/viewAllCollections"
+            android:title="Sites">
+      </item>
+      <item android:id="@+id/settings"
+            android:title="Settings">
+      </item>
+      <item android:id="@+id/exit"
+            android:title="Exit">
+      </item>
+</menu>

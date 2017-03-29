@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1" android:id="@+id/linLay">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/txtName"
+            android:padding="16dp"
+            android:textColor="#ff000aff"
+            android:textSize="24sp"/>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CardViewStyle">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Description"
+                    android:elevation="5dp"
+                    android:id="@+id/txtTitle"
+                    android:textColor="@color/primary_text"
+                    android:padding="16dp"
+                    android:typeface="normal"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:textSize="14sp"
+                    android:padding="16dp"
+                    android:id="@+id/txtDescription"
+                    android:textColor="@color/secondary_text"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:id="@+id/tileAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/CardViewStyle">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Audio Clip"
+                    android:id="@+id/txtAudioClip"
+                    android:textColor="@color/primary_text"
+                    android:padding="16dp"
+                    android:typeface="normal"
+                    android:layout_weight="1"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/icPlay"
+                    android:layout_gravity="right"
+                    android:paddingRight="25dp"
+                    android:src="@drawable/ic_action_play"
+                    android:onClick="onClickAudioPlay"
+                    android:visibility="visible"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/icPause"
+                    android:layout_gravity="right"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ic_action_pause"
+                    android:onClick="onClickAudioPause"
+                    android:visibility="gone"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/icStop"
+                    android:layout_gravity="right"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/ic_action_stop"
+                    android:onClick="onClickAudioStop"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvVideo"
+            android:onClick="onClickVideo"
+            style="@style/CardViewStyle">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Video Clip"
+                android:elevation="5dp"
+                android:id="@+id/txtVideoClip"
+                android:textColor="@color/primary_text"
+                android:padding="16dp"
+                android:typeface="normal"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cvWebsite"
+            android:onClick="onClickWebsite"
+            style="@style/CardViewStyle">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Visit Webpage"
+                android:elevation="5dp"
+                android:id="@+id/txtWebsiteLink"
+                android:textColor="@color/primary_text"
+                android:padding="16dp"
+                android:typeface="normal"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
